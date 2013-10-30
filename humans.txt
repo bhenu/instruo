@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Binayak Ghosh -- lead developer -- facebook.com/ghoshbinayak
+    Asif Iqbal    -- security head  -- facebook.com/xxxxxxxxxxxx
+
+# THANKS
+
+
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Javascript
+    Normalize.css, jQuery, Modernizr, html5-boilerplate, three.js, grunt
