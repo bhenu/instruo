@@ -63,6 +63,6 @@ grunt.loadNpmTasks('grunt-contrib-watch');
 
 // Default task(s).
 grunt.registerTask('default', ['jshint', 'uglify', 'cssmin']);
-grunt.registerTask('livewatch', ['watch']);
+grunt.registerTask('livewatch', 'watch');
 
 };
