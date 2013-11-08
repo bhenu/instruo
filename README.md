@@ -35,6 +35,7 @@ increases INS.waprspeed to 100 and back
 
 **.animate({object});**
 generic animation function. used by .wrap()
+    ```js
     object {
         delay: ,  // start animation after delay
 
@@ -48,6 +49,7 @@ generic animation function. used by .wrap()
 
         fn:             // callback function
     }
+    ```
 
 **.interGalacticSpace();**
 actually draws the background and animates it
