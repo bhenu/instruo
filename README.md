@@ -38,17 +38,18 @@ generic animation function. used by .wrap()
 
 ```js
 object {
-    delay: ,  // start animation after delay
+    delay: 0,  // start animation after delay
 
-    duration: ,     // animation duration
+    duration: 1000,     // animation duration
 
-    delta: ,        // the delta function maps time progress
-                    // to effect progress
+    delta: function(p){ return p;}, // the delta function maps time progress
+                                    // to effect progress
 
-    step: ,         // step function maps effect progress to actual
-                    // attribute/ parameter change
+    step: function(d){ $('element').width = d;},    // step function maps effect
+                                                    // progress to actual attribute
+                                                    // parameter change
 
-    fn:             // callback function
+    fn:  function(){INS.log('animation done');}     // callback function
 }
 ```
 
