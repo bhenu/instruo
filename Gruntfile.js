@@ -49,7 +49,7 @@ grunt.initConfig({
             livereload: true
         },
         src: {
-          files: ['src/css/*.js', 'src/css/*.css', '*.html'],
+          files: ['src/js/*.js', 'src/css/*.css', '*.html'],
           tasks: ['default']
         }
     }

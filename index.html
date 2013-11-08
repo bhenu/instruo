@@ -10,7 +10,6 @@
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
         <link rel="stylesheet" href="http://localhost/dist/css/main.min.css">
-        <script src="http://localhost/dist/js/main.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -22,12 +21,25 @@
         <div id="left-side-panel"></div>
         <div id="right-side-panel"></div>
         <div id="bottom-panel"></div>
-        <div id="central-display-panel"></div>
+        <div id="central-display-panel">
+            <canvas id="central-display-panel-background"></canvas>
+            <div>
+                If you consider a path from (3,1) to (3,5) with a line thickness of 1.0, you end up with the situation in the second image. The actual area to be filled (dark blue) only extends halfway into the pixels on either side of the path. An approximation of this has to be rendered, which means that those pixels being only partially shaded, and results in the entire area (the light blue and dark blue) being filled in with a color only half as dark as the actual stroke color. This is what happens with the 1.0 width line in the previous example code.
 
-        <canvas id="intergalactic-space"></canvas>
+                To fix this, you have to be very precise in your path creation. Knowing that a 1.0 width line will extend half a unit to either side of the path, creating the path from (3.5,1) to (3.5,5) results in the situation in the third image—the 1.0 line width ends up completely and precisely filling a single pixel vertical line.
+
+                Note: Be aware that in our vertical line example, the Y position still referenced an integer gridline position—if it hadn't, we would see pixels with half coverage at the endpoints (but note also that this behavior depends on the current lineCap style whose default value is butt; you may want to compute consistant strokes with half-pixel coordinates for odd-width lines, by setting the lineCap style to square, so that the outer border of the stroke around the endpoint will be automatically extended to cover the whole pixel exactly).
+
+                Note also that only start and final endpoints of a path are affected: if a path is closed with closePath(), there's no star
+            </div>
+        </div>
+        <div id="main-dial">
+            <span id="logo"> xoo xoo</span>
+        </div>
+        <div id="inter-galactic-space"></div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="http://localhost/dist/js/jquery.min.js"><\/script>')</script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -39,5 +51,7 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
         <script src="//localhost:35729/livereload.js"></script>
+        <script src="http://localhost/dist/js/main.min.js"></script>
+        <script src="http://localhost/dist/js/three.min.js"></script>
     </body>
 </html>
