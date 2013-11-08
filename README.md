@@ -21,19 +21,19 @@ javascript code docs
 All the required functionality is implemented with the help of methods of a
 global object named **INS**. The included methods and properties are:
 
-###.warpSpeed = 1;
+####.warpSpeed = 1;
 defines the warp speed.
 
-###.updates = 'some imp text to show';*
+####.updates = 'some imp text to show';*
 holds some text to show somewhere on the site
 
-###.log('log output');
+####.log('log output');
 prints the log output to the console log.
 
-###.warp();
+####.warp();
 increases INS.waprspeed to 100 and back
 
-###.animate({object});
+####.animate({object});
 generic animation function. used by .wrap()
 
 ```js
@@ -53,9 +53,9 @@ object {
 }
 ```
 
-**.interGalacticSpace();**
+####.interGalacticSpace();
 actually draws the background and animates it
 
 
-**.drawCentralDisplayPanel();**
+####.drawCentralDisplayPanel();
 to be modified soon
