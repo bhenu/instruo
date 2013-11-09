@@ -57,5 +57,5 @@ object {
 actually draws the background and animates it
 
 
-####.drawCentralDisplayPanel();
-to be modified soon
+####.drawInterface();
+draw the interface elements on a canvas

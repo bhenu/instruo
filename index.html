@@ -9,7 +9,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-        <link rel="stylesheet" href="http://localhost/dist/css/main.min.css">
+        <link rel="stylesheet" href="dist/css/main.min.css">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -17,12 +17,25 @@
         <![endif]-->
 
         <!-- main site interface -->
-        <div id="top-panel"></div>
+        <div id="title-panel">
+            Instruo 2014
+        </div>
         <div id="left-side-panel"></div>
-        <div id="right-side-panel"></div>
+        <div id="updates-panel">
+            Updates/ sponcers/ any thing you woat
+            Tutorials for Race Pulse, Delta Surge and Laws of Motion are now available.
+            Problem statement for Audit released.
+            Problem statements for new events Circuitron and Eco-stasis updated.
+            Woodstock and Forex trial rounds started.
+            Problem Statement for IDP and Kryotech released.
+            New event Circuitron, Audit and Eco-stasis released.
+            Problem Statement for Embetronix updated.
+            Problem Statements for Innovision and Mandate updated.
+            Events Innovision,Mandate and Kryotech released.
+            Problem Statements for Race Pulse,Delta-surge and ChemQuest events released.
+        </div>
         <div id="bottom-panel"></div>
         <div id="central-display-panel">
-            <canvas id="central-display-panel-background"></canvas>
             <div>
                 If you consider a path from (3,1) to (3,5) with a line thickness of 1.0, you end up with the situation in the second image. The actual area to be filled (dark blue) only extends halfway into the pixels on either side of the path. An approximation of this has to be rendered, which means that those pixels being only partially shaded, and results in the entire area (the light blue and dark blue) being filled in with a color only half as dark as the actual stroke color. This is what happens with the 1.0 width line in the previous example code.
 
@@ -37,7 +50,7 @@
             <span id="logo"> xoo xoo</span>
         </div>
         <div id="inter-galactic-space"></div>
-
+        <canvas id="interface"></canvas>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="http://localhost/dist/js/jquery.min.js"><\/script>')</script>
 
@@ -51,7 +64,7 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
         <script src="//localhost:35729/livereload.js"></script>
-        <script src="http://localhost/dist/js/main.min.js"></script>
-        <script src="http://localhost/dist/js/three.min.js"></script>
+        <script src="dist/js/main.min.js"></script>
+        <script src="dist/js/three.min.js"></script>
     </body>
 </html>

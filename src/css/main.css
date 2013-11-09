@@ -298,7 +298,7 @@ body {
 }
 
 #inter-galactic-space {
-    background: url('http://localhost/img/Galaxy.jpg');
+    background: url('../../img/Galaxy.jpg');
     /* background-size: 100% auto; */
     overflow: hidden;
     width: 100%;
@@ -357,15 +357,15 @@ body {
 */
 
 #central-display-panel {
-    width: 60%;
+    width: 56%;
     background: transparent;
-    height: 70%;
+    height: 73%;
     position: absolute;
-    top: 20%;
-    left: 23%;
+    top: 15%;
+    left: 20%;
     font-family: FreeMono;
-    font-weight: normal;
-    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    color: rgba(255,255,255,.8);
     text-align: justify;
     line-height: 26px;
     overflow: hidden;
@@ -379,15 +379,37 @@ body {
     overflow: hidden;
 }
 
-#central-display-panel-background {
+#interface {
     position: absolute;
     z-index: -50;
+    top: 0;
+    left: 0;
 }
 
 #logo {
     margin-left: 45px;
 }
 
+#updates-panel {
+    position: absolute;
+    top: 10%;
+    left: 83%;
+    width: 15%;
+    height: 60%;
+    color: white;
+    font-family: FreeMono;
+    font-size: 0.8em;
+    overflow: hidden;
+}
 
+#title-panel {
+    top: 6%;
+    position: absolute;
+    left: 22%;
+    font-family: Ubuntu Light;
+    font-weight: lighter;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.77);
+}
 
 
